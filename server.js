@@ -77,15 +77,15 @@ io.on('connection',(socket)=>
     socket.leave();
 })
 });
-// const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-// server.listen(PORT , () =>{
-// console.log(`server started on port ${PORT}`)
-// });
+server.listen(PORT , () =>{
+console.log(`server started on port ${PORT}`)
+});
 
-app.listen(process.env.PORT || 5000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+// app.listen(process.env.PORT || 5000, function(){
+//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+//   });
 
 // // io = require('http').Server(app);
 // var socket = require('socket.io')(io);
