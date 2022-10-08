@@ -84,11 +84,11 @@ console.log(`server started on port ${PORT}`)
 
 
 
-// io = require('http').Server(app);
-var socket = require('socket.io')(io);
+// // io = require('http').Server(app);
+// var socket = require('socket.io')(io);
 
-socket.on('connect',function(socket){
-    console.log('got a connection')
-});
+// socket.on('connect',function(socket){
+//     console.log('got a connection')
+// });
 
-io.listen(3000)
+// io.listen(3000)
