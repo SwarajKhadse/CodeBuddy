@@ -21,6 +21,7 @@ function getAllConnectedClients (roomId)
 {
    return  Array.from(io.sockets.adapter.rooms.get(roomId)|| []).map((socketId)=>
     {
+        
         return {
             socketId,
             username:userSocketMap[socketId],
